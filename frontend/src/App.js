@@ -1,49 +1,58 @@
 import './App.css';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
 
 function App() {
   const year = new Date().getFullYear();
   const age = year - 2003;
   return (
-    <div className = "App">
+    <div className="App">
       {/** Main Section */}
-      <div>
-        <h1>Hi, I'm Kristin ! </h1>
-        <p>
-          I'm a {age} software developer from Melbourne, Australia. I love
-          designing and coding websites!
-        </p>
+      <div className="main">
+        <div className="description">
+          <div>
+            <h1 className="name">hi, i'm kristin ! </h1>
+            <p>frontend and backend developer. currently, my main goal is to improve my css skills !!!!  </p>
+          </div>
+          <div className = "image">
+              <p> Image </p>
+          </div>
+      
+        </div>
       </div>
       {/** About Section */}
       <div>
         <h3>About Me</h3>
-        <p>text about me</p>
+        <p>i'm a {age} year old from melbourne, australia. 
+          my hobbies include programming, designing, playing with my dog and going outside.  
+        </p>
       </div>
 
       {/** Education Section */}
       <div>
-        <h3>Education</h3>
-        <div>
-          <p>
-            Monash University
-          </p>
-          <div>
-            <p>2021 - 2025.</p>
-          </div>
-        </div>
+        <Education 
+        logo="MonashLogo.jpg"
+        university="Monash University"
+        degree="Bachelor of Information Technology"
+        date="2021 - 2025" />
       </div>
 
       {/** Experience Section */}
       <div>
-        <h3>Experience</h3>
+        <Experience />
       </div>
 
       {/** Skills Section */}
       <div>
-        <h3>Skills</h3>
+        <Skills />
       </div>
 
       {/** Projects Section */}
-      
+      <div>
+        <Projects />
+      </div>
     </div>
   );
 }

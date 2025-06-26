@@ -1,0 +1,33 @@
+
+.education p {
+    margin: 0;
+}
+
+.degree {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  gap: 0;
+}
+
+.degree p {
+    margin: 0; 
+
+}
+
+.logo {
+  max-width: 40px;
+  height: auto;
+}
+
+.university {
+    font-weight: bold;
+}
+
+.date {
+
+    justify-self: end;
+
+}
+@media only screen and (min-width: 600px) {
+
+}
