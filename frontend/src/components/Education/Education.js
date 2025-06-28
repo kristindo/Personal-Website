@@ -9,7 +9,7 @@ function Education({logo, university, degree, date}) {
   return (
     <div>
       <div className={styles.education}>
-        <h3>Education</h3>
+
         <div className={styles.degree}>
           <img className = {styles.logo} src={logo} alt="Logo"/>
           <div>

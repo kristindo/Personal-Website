@@ -3,12 +3,14 @@ import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
+import Sakura from './components/Sakura/Sakura';
 
 function App() {
   const year = new Date().getFullYear();
   const age = year - 2003;
   return (
     <div className="App">
+      <Sakura />
       {/** Main Section */}
       <div className="main">
         <div className="description">
@@ -31,13 +33,23 @@ function App() {
       </div>
 
       {/** Education Section */}
+      
       <div>
+        <h3>Education</h3>
         <Education 
         logo="MonashLogo.jpg"
         university="Monash University"
         degree="Bachelor of Information Technology"
         date="2021 - 2025" />
+              <div>
+        <Education 
+        logo="MonashLogo.jpg"
+        university="Killester College"
+        degree="VCE"
+        date="2015 - 2020" />
       </div>
+      </div>
+
 
       {/** Experience Section */}
       <div>

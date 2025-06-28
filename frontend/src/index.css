@@ -7,3 +7,12 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
+
+
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+

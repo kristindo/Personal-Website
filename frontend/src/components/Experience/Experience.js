@@ -4,7 +4,7 @@ import styles from './Experience.module.css';
 function Experience() {
   return (
     <div>
-      <h2>Experience!</h2>
+      <h3>Experience!</h3>
     </div>
   );
 }
