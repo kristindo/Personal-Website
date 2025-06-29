@@ -6,6 +6,7 @@
   max-width: 100%;
   margin: 0 auto;
   border: 1px transparent;
+  padding: 1rem; 
 }
 
 
@@ -17,22 +18,56 @@
 
 }
 
-.image {
-  border: 1px solid; 
+.profile {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+  border: 1px solid var(--light-purple);
+    margin: 0 auto;
 }
 
 .name {
   color: var(--royal-purple);
 }
+
+/* Centering image on mobile screens */
+@media only screen and (max-width: 450px) {
+  .profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .education {
+    text-align: center;
+  }
+  
+}
+
 /* More than 600px */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 450px) {
   .App {
     width: 650px;
     font-size: 0.8rem;
+        padding: 2rem;
   }
 
   .description{
     grid-template-columns: 1fr 1fr;
   }
+
+    .profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
 }
 

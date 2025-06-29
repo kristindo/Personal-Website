@@ -19,14 +19,14 @@ function App() {
             <p>frontend and backend developer. currently, my main goal is to improve my css skills !!!!  </p>
           </div>
           <div className = "image">
-              <p> Image </p>
+              <img className="profile" src="honey.jpg" alt="Logo" width={230} height={230}/>
           </div>
       
         </div>
       </div>
       {/** About Section */}
       <div>
-        <h3>About Me</h3>
+        <h3 className = "about">About Me</h3>
         <p>i'm a {age} year old from melbourne, australia. 
           my hobbies include programming, designing, playing with my dog and going outside.  
         </p>
@@ -35,7 +35,7 @@ function App() {
       {/** Education Section */}
       
       <div>
-        <h3>Education</h3>
+        <h3 className = "education">Education</h3>
         <Education 
         logo="MonashLogo.jpg"
         university="Monash University"

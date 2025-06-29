@@ -4,6 +4,12 @@
   --light-purple: #9B7EBD;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
