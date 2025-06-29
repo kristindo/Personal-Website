@@ -1,10 +1,12 @@
 import react from 'react';
 import styles from './Experience.module.css';
 
-function Experience() {
+function Experience({company, project, date}) {
   return (
     <div>
-      <h3>Experience!</h3>
+      <div>
+        <div className={styles.company}></div>
+      </div>
     </div>
   );
 }

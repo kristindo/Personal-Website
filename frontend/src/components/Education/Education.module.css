@@ -1,6 +1,7 @@
 
 .education p {
     margin: 0;
+
 }
 
 .degree {
@@ -8,10 +9,13 @@
   grid-template-columns: 1fr 5fr 2fr;
   gap: 0;
   padding-top: 5px;
+     align-items: center;
 }
 
 .degree p {
     margin: 0; 
+ 
+    
 
 }
 

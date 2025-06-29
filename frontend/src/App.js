@@ -43,7 +43,7 @@ function App() {
         date="2021 - 2025" />
               <div>
         <Education 
-        logo="MonashLogo.jpg"
+        logo="killester-college-favicon.png"
         university="Killester College"
         degree="VCE"
         date="2015 - 2020" />
