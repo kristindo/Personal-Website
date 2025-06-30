@@ -19,6 +19,11 @@
 
 }
 
+.hidden {
+    border: 1px solid;
+    height: 20px; 
+}
+
 .logo {
   max-width: 40px;
   height: auto;

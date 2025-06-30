@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    padding: 0px 2px 2px 2px;
+    margin: 0;
+}
+.skills {
+    border: 2px solid var(--royal-purple);
+    border-radius: 8px;
+    display: inline-block;
+    padding: 4px;
+    color: var(--royal-purple);
+    font-weight: 600;
+}
