@@ -70,7 +70,7 @@ function App() {
 
       {/** Skills Section */}
       <div>
-        <h3>Skills</h3>
+        <h3 className = "skills">Skills</h3>
         <Skills />
       </div>
 

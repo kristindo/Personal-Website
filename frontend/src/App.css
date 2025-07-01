@@ -43,6 +43,10 @@
   .education {
     text-align: center;
   }
+
+  .skills {
+    text-align: center;
+  }
 }
 
 /* More than 600px */
@@ -62,4 +66,5 @@
     margin-left: auto;
     margin-right: auto;
   }
+  
 }
