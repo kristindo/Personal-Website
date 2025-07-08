@@ -15,6 +15,18 @@
   margin: auto;
 }
 
+.button {
+  background-color: var(--royal-purple);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
+}
 .profile {
   width: 230px;
   height: 230px;
@@ -24,8 +36,23 @@
   margin: 0 auto;
 }
 
+.linked:hover {
+  scale: 1.1;
+}
+
+.git:hover {
+  scale: 1.1;
+}
 .name {
   color: var(--royal-purple);
+}
+
+.skills {
+  margin-bottom: 0px;
+}
+
+.animated {
+  animation: showModal 1s forwards easeOut; 
 }
 
 /* Centering image on mobile screens */

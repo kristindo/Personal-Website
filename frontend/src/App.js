@@ -4,11 +4,18 @@ import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Sakura from './components/Sakura/Sakura';
+import FormModal from './Modal/FormModal';
+import React from 'react';
+import { useState } from 'react';
+
 
 
 function App() {
   const year = new Date().getFullYear();
   const age = year - 2003;
+  const[showModal, setShowModal] =  useState(false);
+
+  
   return (
     <div className="App">
       <Sakura />
@@ -17,11 +24,15 @@ function App() {
         <div className="description">
           <div>
             <h1 className="name">hi, i'm kristin ! </h1>
+
+
             <p>
               frontend and backend developer. currently, my main goal is to
               improve my css skills !!!!{' '}
             </p>
-        
+
+            <button className = "button" onClick={() => setShowModal(true)}>Contact Me</button>
+            {showModal && <FormModal onClose={() => setShowModal(false)} />}
           </div>
           <div className="image">
             <img
@@ -65,18 +76,48 @@ function App() {
 
       {/** Experience Section */}
       <div>
+        <h3>Experience</h3>
         <Experience />
       </div>
 
       {/** Skills Section */}
-      <div>
-        <h3 className = "skills">Skills</h3>
+      <div className="skills">
+        <h3>Skills</h3>
         <Skills />
       </div>
 
       {/** Projects Section */}
       <div>
         <Projects />
+      </div>
+      <div>
+        my socials
+        <a
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/kristin-do/"
+          target="_blank"
+        >
+          <img
+            className="linked"
+            width="44"
+            height="44"
+            src="linkedin.png"
+            alt="linkedin--v1"
+          />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/kristin-do/"
+          target="_blank"
+        >
+          <img
+            className="git"
+            width="44"
+            height="44"
+            src="git.png"
+            alt="linkedin--v1"
+          />
+        </a>
       </div>
     </div>
   );
