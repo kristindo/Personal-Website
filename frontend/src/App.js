@@ -31,7 +31,7 @@ function App() {
               improve my css skills !!!!{' '}
             </p>
 
-            <button className = "button" onClick={() => setShowModal(true)}>Contact Me</button>
+            <button className = "button" onClick={() => setShowModal(true)}>send me an email</button>
             {showModal && <FormModal onClose={() => setShowModal(false)} />}
           </div>
           <div className="image">

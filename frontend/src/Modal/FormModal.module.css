@@ -86,6 +86,12 @@ width: 100vw;
   text-align: center;
 }
 
+textarea {
+    resize: vertical;
+      max-height: 150px;
+      height: 150px;
+}
+
 
 .button {
   background-color: var(--royal-purple);
