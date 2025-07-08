@@ -15,7 +15,7 @@ function FormModal({ onClose }) {
     }, 300); // Match this duration with the CSS animation duration
   }
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${isClosing ? styles.closing : ''}`}>
      <div
         className={`${styles.modalcontainer} ${isClosing ? styles.closing : ''}`}
       >

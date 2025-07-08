@@ -12,6 +12,7 @@ width: 100vw;
  left:0 ;
   padding: 1rem;
     z-index: 9999;
+      animation: showModal 0.5s forwards ease-out
 
 }
 
@@ -30,6 +31,11 @@ width: 100vw;
 .modalcontainer.closing {
   animation: closeModal 0.3s ease-out forwards;
 }
+
+.container.closing {
+    animation: closeModal 0.3s ease-out forwards;
+}
+
 
 
 
@@ -79,8 +85,13 @@ width: 100vw;
 
     .modalcontainer {
         width: 586px;
-           padding: 2rem;
+ 
     
     }
   
+    .title {
+    text-align: center;
+    margin: 0;
+
+}
 }
