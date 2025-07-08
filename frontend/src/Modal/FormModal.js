@@ -54,7 +54,7 @@ function FormModal({ onClose }) {
                   required
                 />
               </div>
-              <button type="submit">send</button>
+              <button className = "button" type="submit">send</button>
             </form>
           </div>
         </div>

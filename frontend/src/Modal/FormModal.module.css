@@ -87,7 +87,18 @@ width: 100vw;
 }
 
 
-
+.button {
+  background-color: var(--royal-purple);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
+}
 
 @keyframes showModal {
   from {

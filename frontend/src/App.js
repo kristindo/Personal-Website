@@ -49,8 +49,7 @@ function App() {
       <div>
         <h3 className="about">About Me</h3>
         <p>
-          i'm a {age} year old from melbourne, australia. my hobbies include
-          programming, designing, playing with my dog and going outside.
+          i'm a {age} year old from melbourne, australia. when i'm not coding, i enjoy playing with my dog, drinking matcha and going outside to touch some grass ! 
         </p>
       </div>
 
