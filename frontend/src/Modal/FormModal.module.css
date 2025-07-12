@@ -124,7 +124,7 @@ textarea {
 @media only screen and (min-width: 450px) {
   .modalcontainer {
     max-width: 586px;
-    height: 55vh;
+    height: 470px;;
   }
 
   .title {

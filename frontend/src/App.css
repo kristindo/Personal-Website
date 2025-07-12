@@ -62,17 +62,11 @@
     margin-right: auto;
   }
 
-  .about {
+  .about, .projects, .experience, .education, .skills {
     text-align: center;
   }
 
-  .education {
-    text-align: center;
-  }
 
-  .skills {
-    text-align: center;
-  }
 }
 
 /* More than 600px */

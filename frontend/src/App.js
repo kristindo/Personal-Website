@@ -49,7 +49,7 @@ function App() {
       <div>
         <h3 className="about">About Me</h3>
         <p>
-          i'm a {age} year old from melbourne, australia. when i'm not coding, i enjoy playing with my dog, drinking matcha and going outside to touch some grass ! 
+          i'm a {age} year old from melbourne, australia. when i'm not coding, i enjoy playing with my dog, drinking matcha, doing my nails and going outside to touch some grass ! 
         </p>
       </div>
 
@@ -75,19 +75,22 @@ function App() {
 
       {/** Experience Section */}
       <div>
-        <h3>Experience</h3>
+        <h3 className = "experience">Experience</h3>
         <Experience />
       </div>
 
-      {/** Skills Section */}
-      <div className="skills">
-        <h3>Skills</h3>
-        <Skills />
-      </div>
+
 
       {/** Projects Section */}
       <div>
-        <Projects />
+          <h3 className = "projects">Projects</h3>
+        <Projects project="personal website" live="https://kristindo.me/" git="https://github.com/kristindo/Personal-Website" />
+      </div>
+
+            {/** Skills Section */}
+      <div className="skills">
+        <h3>Skills</h3>
+        <Skills />
       </div>
     
     </div>

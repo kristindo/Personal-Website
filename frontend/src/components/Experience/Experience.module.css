@@ -1,0 +1,43 @@
+.company {
+    font-weight: 600;
+
+        display: flex;
+        gap: 0.3rem;
+}
+
+.tools {
+ 
+    font-weight: 500;
+}
+
+.tools_container {
+    font-weight: 500;
+        color:rgb(134, 134, 134)
+}
+
+.info_container {
+    margin: 0;
+}
+
+.role {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 0;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.date {
+    justify-self: end;
+    margin: 0px;
+}
+
+.name {
+    margin: 0px;
+}

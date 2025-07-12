@@ -1,16 +1,19 @@
-import react from 'react';
 import styles from './Experience.module.css';
 
-function Experience({ company, project, date }) {
+function Experience() {
   return (
     <div>
       <div>
-        <div className={styles.company}>Interactive Student Satisfaction Survey</div>
-        <div><p>Tools: CakePHP, mySQL, SVGs, HTML/CSS</p></div>
-        <div>
-          <ul>
-            <li>collaborated wtih a team to develop a system for bialik college </li>
-          </ul>
+        <div className={styles.job}>
+          <div className={styles.company}>
+            <p className = {styles.name}>Interactive Student Satisfaction Survey - </p>{' '}
+            <p className={styles.role}> software developer </p>
+          </div>
+          <div className={styles.date}>mar 2024</div>
+        </div>
+        <div className={styles.tools_container}>
+          {' '}
+          cakephp, mysql, svg, css, html
         </div>
       </div>
     </div>

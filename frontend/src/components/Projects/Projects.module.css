@@ -1,0 +1,31 @@
+.name {
+    font-weight: 600;
+    
+  display: grid;
+  grid-template-columns: 11fr 1fr 1fr;
+  gap: 0;
+ 
+}
+
+.git, .live  {
+    margin: 0px;
+    justify-self: end;
+}
+
+.project {
+    margin: 0px;
+}
+.tools {
+        font-weight: 500;
+        color:rgb(134, 134, 134)
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
