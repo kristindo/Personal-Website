@@ -4,7 +4,6 @@
   width: 100vw;
   max-width: 100%;
   margin: 0 auto;
-  border: 1px transparent;
   padding: 1rem;
 }
 
@@ -81,7 +80,7 @@
   .App {
     width: 650px;
     font-size: 0.9rem;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .description {

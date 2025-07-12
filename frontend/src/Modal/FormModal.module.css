@@ -1,31 +1,30 @@
 .container {
-        display: flex;
-    justify-content: center;
-    align-items: center;
-background-color: rgba(255, 255, 255, 0.9);
-border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-height: 100vh;
-width: 100vw;
- position: fixed;
- top: 0;
- left:0 ;
-  padding: 1rem;
-    z-index: 9999;
-      animation: showModal 0.5s forwards ease-out
+  background-color: rgba(255, 255, 255, 0.9);
 
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 9999;
+  animation: showModal 0.5s forwards ease-out;
 }
 
 .modalcontainer {
-    position: relative;
-    border: 2px solid var(--royal-purple);
-    border-radius: 8px;
-    padding: 4px;
-    background-color: white;
-    height: 50vh;
-    width: 70vw;
-  animation: showModal 0.5s forwards ease-out
-    
+  position: absolute;
+  border: 2px solid var(--royal-purple);
+  border-radius: 8px;
+  padding: 4px;
+  background-color: white;
+  height: 50vh;
+  width: 90%;
+
+  animation: showModal 0.5s forwards ease-out;
 }
 
 .modalcontainer.closing {
@@ -33,17 +32,13 @@ width: 100vw;
 }
 
 .container.closing {
-    animation: closeModal 0.3s ease-out forwards;
+  animation: closeModal 0.3s ease-out forwards;
 }
 
-
-
-
-
 .title {
-    text-align: center;
-    margin: 0;
-    padding: 8px;
+  text-align: center;
+  margin: 0;
+  padding: 8px;
 }
 
 .close {
@@ -61,23 +56,22 @@ width: 100vw;
   scale: 1.1;
 }
 
-
-.message, .email {
+.message,
+.email {
   display: block;
   font-weight: bold;
-    padding-bottom: 0.5rem;
-    text-align: left;
-    
+  padding-bottom: 0.5rem;
+  text-align: left;
 }
 
-.message_input, .email_input{
+.message_input,
+.email_input {
   padding: 10px;
   border-radius: 12px;
-  border: 1px solid var(--light-purple );
+  border: 1px solid var(--light-purple);
   width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-
+  box-sizing: border-box;
+  margin-bottom: 5px;
 }
 
 .form {
@@ -87,12 +81,15 @@ width: 100vw;
 }
 
 textarea {
-    resize: vertical;
-      max-height: 150px;
-      height: 150px;
+  resize: vertical;
+  max-height: 150px;
+  height: 150px;
 }
 
-
+.center_text{
+  text-align: center;
+  font-weight: bold;
+}
 .button {
   background-color: var(--royal-purple);
   color: white;
@@ -116,27 +113,22 @@ textarea {
 }
 
 @keyframes closeModal {
-  from { 
+  from {
     opacity: 1;
-
   }
   to {
-    opacity: 0; 
+    opacity: 0;
   }
 }
 
-
 @media only screen and (min-width: 450px) {
+  .modalcontainer {
+    max-width: 586px;
+    height: 55vh;
+  }
 
-    .modalcontainer {
-        width: 586px;
- 
-    
-    }
-  
-    .title {
+  .title {
     text-align: center;
     margin: 0;
-
-}
+  }
 }

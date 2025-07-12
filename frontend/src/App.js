@@ -89,35 +89,7 @@ function App() {
       <div>
         <Projects />
       </div>
-      <div>
-        my socials
-        <a
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/kristin-do/"
-          target="_blank"
-        >
-          <img
-            className="linked"
-            width="44"
-            height="44"
-            src="linkedin.png"
-            alt="linkedin--v1"
-          />
-        </a>
-        <a
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/kristin-do/"
-          target="_blank"
-        >
-          <img
-            className="git"
-            width="44"
-            height="44"
-            src="git.png"
-            alt="linkedin--v1"
-          />
-        </a>
-      </div>
+    
     </div>
   );
 }
