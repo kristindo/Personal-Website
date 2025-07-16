@@ -100,7 +100,7 @@ function FormModal({ onClose }) {
         </a>
         <a
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/kristin-do/"
+          href="https://www.github.com/kristin-do/"
           target="_blank"
         >
           <img

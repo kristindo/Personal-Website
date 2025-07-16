@@ -8,14 +8,11 @@ import FormModal from './Modal/FormModal';
 import React from 'react';
 import { useState } from 'react';
 
-
-
 function App() {
   const year = new Date().getFullYear();
   const age = year - 2003;
-  const[showModal, setShowModal] =  useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  
   return (
     <div className="App">
       <Sakura />
@@ -25,13 +22,14 @@ function App() {
           <div>
             <h1 className="name">hi, i'm kristin ! </h1>
 
-
             <p>
               frontend and backend developer. currently, my main goal is to
               improve my css skills !!!!{' '}
             </p>
 
-            <button className = "button" onClick={() => setShowModal(true)}>send me an email</button>
+            <button className="button" onClick={() => setShowModal(true)}>
+              send me an email
+            </button>
             {showModal && <FormModal onClose={() => setShowModal(false)} />}
           </div>
           <div className="image">
@@ -49,7 +47,9 @@ function App() {
       <div>
         <h3 className="about">About Me</h3>
         <p>
-          i'm a {age} year old from melbourne, australia. when i'm not coding, i enjoy playing with my dog, drinking matcha, doing my nails and going outside to touch some grass ! 
+          i'm a {age} year old from melbourne, australia. when i'm not coding, i
+          enjoy playing with my dog, drinking matcha, doing my nails and going
+          outside to touch some grass !
         </p>
       </div>
 
@@ -75,24 +75,25 @@ function App() {
 
       {/** Experience Section */}
       <div>
-        <h3 className = "experience">Experience</h3>
+        <h3 className="experience">Experience</h3>
         <Experience />
       </div>
 
-
-
       {/** Projects Section */}
       <div>
-          <h3 className = "projects">Projects</h3>
-        <Projects project="personal website" live="https://kristindo.me/" git="https://github.com/kristindo/Personal-Website" />
+        <h3 className="projects">Projects</h3>
+        <Projects
+          project="personal website"
+          live="https://kristindo.me/"
+          git="https://github.com/kristindo/Personal-Website"
+        />
       </div>
 
-            {/** Skills Section */}
+      {/** Skills Section */}
       <div className="skills">
         <h3>Skills</h3>
         <Skills />
       </div>
-    
     </div>
   );
 }
